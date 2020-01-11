@@ -186,16 +186,16 @@ if __name__ == '__main__':
         from dataset.mnist import MNIST as data
         os.system('cp {}/dataset/mnist.py {}'.format(BASE_DIR, save_dir))
     elif options.data_name == 'fashion_mnist':
-        from dataset.fashion_mnist import FashionMNIST as data
+        from dataset.fashion_mnist import FashionMNIST as dataa
         os.system('cp {}/dataset/fashion_mnist.py {}'.format(BASE_DIR, save_dir))
     elif options.data_name == 'cifar10':
-        from dataset.cifar10 import CIFAR10 as data
+        from dataset.cifar10 import CIFAR10 as dataa
         os.system('cp {}/dataset/cifar10.py {}'.format(BASE_DIR, save_dir))
     elif options.data_name == 't_mnist':
-        from dataset.mnist_translate import MNIST as data
+        from dataset.mnist_translate import MNIST as dataa
         os.system('cp {}/dataset/mnist_translate.py {}'.format(BASE_DIR, save_dir))
     elif options.data_name == 'c_mnist':
-        from dataset.mnist_clutter import MNIST as data
+        from dataset.mnist_clutter import MNIST as dataa
         os.system('cp {}/dataset/mnist_clutter.py {}'.format(BASE_DIR, save_dir))
 
     #train_dataset = data(mode='train')
