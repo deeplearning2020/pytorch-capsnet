@@ -5,11 +5,11 @@ parser = OptionParser()
 
 parser.add_option('-e', '--epochs', dest='epochs', default=200, type='int',
                   help='number of epochs (default: 80)')
-parser.add_option('-b', '--batch-size', dest='batch_size', default=100, type='int',
+parser.add_option('-b', '--batch-size', dest='batch_size', default=16, type='int',
                   help='batch size (default: 16)')
-parser.add_option('--df', '--disp_freq', dest='disp_freq', default=100, type='int',
+parser.add_option('--df', '--disp_freq', dest='disp_freq', default=16, type='int',
                   help='frequency of displaying the training results (default: 100)')
-parser.add_option('--vf', '--val_freq', dest='val_freq', default=600, type='int',
+parser.add_option('--vf', '--val_freq', dest='val_freq', default=32, type='int',
                   help='run validation for each <val_freq> iterations (default: 2000)')
 parser.add_option('-j', '--workers', dest='workers', default=0, type='int',
                   help='number of data loading workers (default: 16)')
@@ -26,7 +26,7 @@ parser.add_option('--ic', '--img_c', dest='img_c', default=1, type='int',
 
 parser.add_option('--ni', '--num_iterations', dest='num_iterations', default=3, type='int',
                   help='number of routing iterations (default: 3)')
-parser.add_option('--nc', '--num_classes', dest='num_classes', default=10, type='int',
+parser.add_option('--nc', '--num_classes', dest='num_classes', default=3, type='int',
                   help='number of classes (default: 10)')
 
 # For loss
