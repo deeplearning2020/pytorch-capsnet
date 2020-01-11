@@ -203,8 +203,8 @@ if __name__ == '__main__':
     TEST_DATA_PATH = "./capsnetdataset/test/"
     TRANSFORM_IMG = transforms.Compose([
     transforms.Grayscale(num_output_channels=1),
-    transforms.Resize(256),
-    transforms.CenterCrop(256),
+    transforms.Resize(28),
+    transforms.CenterCrop(28),
     transforms.ToTensor()
     ])
     '''
