@@ -223,7 +223,7 @@ if __name__ == '__main__':
     ##################################
     log_string('')
     log_string('Start training: Total epochs: {}, Batch size: {}, Training size: {}, Validation size: {}'.
-               format(options.epochs, options.batch_size, len(train_dataset), len(test_dataset)))
+               format(options.epochs, options.batch_size, len(train_data), len(test_data)))
     train_logger = Logger(os.path.join(logs_dir, 'train'))
     test_logger = Logger(os.path.join(logs_dir, 'test'))
 
